@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.splash {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-out;
+}
+.splash h1 {
+  color: #fff;
+  font-size: 3rem;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(85, 141, 141);
+  text-align: center;
+  color: white;
+}
+.quiz-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  color: black;
+}
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.options button,
+#restart-btn,
+#explanation-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.options button {
+  background-color: rgb(228, 171, 180);
+  color: white;
+}
+.options button:hover {
+  background-color: #70ffac;
+}
+#restart-btn {
+  background-color: #70ffac;
+  display: none;
+}
+#explanation-btn {
+  background-color: #70ffac;
+  display: none;
+}
+#restart-btn:hover {
+  background-color: yellow;
+}
+#explanation-btn:hover {
+  background-color: yellow;
+}
+.score {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: darkslategray;
+}
+.explanation {
+  display: none;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: black;
+  text-align: left;
+}
+.explanation p {
+  margin-bottom: 10px;
+}
+
+.poin {
+  padding: 15px;
+  background-color: yellow; /* Warna kotak */
+  color: white; /* Warna teks */
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  width: 200px;
+  margin: auto;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧪 Kuis Kimia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="splash">
+      <h1>Syap?</h1>
+    </div>
+
+    <script>
+      setTimeout(() => {
+        document.querySelector(".splash").style.opacity = "0";
+        setTimeout(() => {
+          document.querySelector(".splash").style.display = "none";
+        }, 1000);
+      }, 3000);
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="quiz-container">
+      <h2>🧪 Kuis Kimia</h2>
+      <div id="question-container" class="question"></div>
+      <div id="options-container" class="options"></div>
+      <div id="score" class="score"></div>
+      <button id="restart-btn" onclick="restartQuiz()">🔄 Ulang Kuis</button>
+      <button id="explanation-btn" onclick="showExplanation()">
+        📖 Lihat Pembahasan
+      </button>
+      <div id="explanation" class="explanation"></div>
+    </div>
+
+    <script>
+      const quizData = [
+        {
+          question:
+            "Suatu unsur memiliki dua isotop, yaitu isotop A-10 dengan massa 10 sma dan kelimpahan 70%, serta isotop A-12 dengan massa 12 sma dan kelimpahan 30%. Berapakah massa atom rata-rata unsur tersebut?",
+          options: ["10,6 sma", "11,6 sma", "12,6 sma", "11,6 sma"],
+          correct: "10,6 sma",
+          explanation: [
+            "Massa atom rata-rata=(10 × 70%) + (12 × 30%) / 100%",
+            "=10,6 sma",
+          ],
+        },
+        {
+          question:
+            "Satu atom unsur X memiliki massa 3,32 × 10⁻²³ g. Jika 1/12 massa atom C-12 adalah 1,66 × 10⁻²⁴ g, tentukan massa atom relatif (Ar) unsur X!",
+          options: ["16", "18", "20", "22"],
+          correct: "20",
+          explanation: [
+            "Ar = 1,66 × 10<sup>-24</sup> / 3,32 × 10<sup>-23</sup>",
+            "= 20",
+          ],
+        },
+        {
+          question:
+            "Air (H₂O) terdiri dari atom hidrogen dan oksigen. Jika massa atom relatif (Ar) hidrogen adalah 1 dan oksigen adalah 16, hitung massa rumus relatif (Mr) air!",
+          options: ["18", "9", "12", "20"],
+          correct: "18",
+          explanation: [
+            "Mr H₂O = (2 × 1) + (1 × 16) = 18",
+            "Jadi, massa rumus relatif air adalah 18.",
+          ],
+        },
+        {
+          question:
+            "Diketahui bilangan Avogadro adalah 6,02 × 10²³ partikel/mol. Jika terdapat 2 mol atom karbon, berapakah jumlah atom karbon yang terkandung dalam sampel tersebut?",
+          options: [
+            "1,304 × 10²⁴, atom karbon",
+            "1,204 × 10²⁴, atom karbon",
+            "1,104 × 10²⁴, atom karbon",
+            "1,004 × 10²⁴, atom karbon",
+          ],
+          correct: "1,204 × 10²⁴, atom karbon",
+          explanation: [
+            "Jumlah atom = mol × bilangan Avogadro",
+            "= 2 × 6,02 × 10<sup>23</sup>",
+            "= 1,204 × 10<sup>24</sup> atom karbon",
+          ],
+        },
+        {
+          question:
+            "Seorang laboran ingin membuat 500 mL larutan gula (C₁₂H₂₂O₁₁) yang mengandung 6,02 × 10²³ molekul gula. Berapa gram gula yang harus dilarutkan oleh laboran tersebut (Diketahui: Ar C = 12, H = 1, O = 16)",
+          options: ["342 gram", "300 gram", "278 gram", "302 gram"],
+          correct: "342 gram",
+          explanation: [
+            "Mr gula = (12 × 2) + (22 × 1) + (11 × 16) = 342 gram",
+            "Jumlah molekul gula = 6,02 × 10<sup>23</sup>",
+            "n = 6,02 × 10<sup>23</sup> / 6,02 × 10<sup>23</sup> = 1 mol",
+            "Massa gula = n × m<sub>m</sub> = = 1 mol × 342 gram/mol",
+            "= 342 gram",
+          ],
+        },
+      ];
+
+      let currentQuestionIndex = 0;
+      let score = 0;
+
+      function loadQuestion() {
+        if (currentQuestionIndex < quizData.length) {
+          document.getElementById("restart-btn").style.display = "none";
+          document.getElementById("explanation-btn").style.display = "none";
+          document.getElementById("explanation").style.display = "none";
+
+          const questionData = quizData[currentQuestionIndex];
+          document.getElementById("question-container").textContent =
+            questionData.question;
+
+          const optionsContainer = document.getElementById("options-container");
+          optionsContainer.innerHTML = "";
+
+          questionData.options.forEach((option) => {
+            const button = document.createElement("button");
+            button.textContent = option;
+            button.onclick = () => checkAnswer(option);
+            optionsContainer.appendChild(button);
+          });
+        } else {
+          document.getElementById("question-container").textContent =
+            "🎉 Kuis selesai!";
+          document.getElementById("options-container").innerHTML = "";
+          document.getElementById(
+            "score"
+          ).textContent = `Skor Anda: ${score} / ${quizData.length}`;
+          document.getElementById("restart-btn").style.display = "block";
+          document.getElementById("explanation-btn").style.display = "block";
+        }
+      }
+
+      function checkAnswer(answer) {
+        if (answer === quizData[currentQuestionIndex].correct) {
+          score++;
+        }
+        currentQuestionIndex++;
+        loadQuestion();
+      }
+
+      function restartQuiz() {
+        currentQuestionIndex = 0;
+        score = 0;
+        document.getElementById("score").textContent = "";
+        loadQuestion();
+      }
+
+      function showExplanation() {
+        let explanationText = "<h3>📖 Pembahasan</h3>";
+        quizData.forEach((q, index) => {
+          explanationText += `<p><strong>${index + 1}. ${
+            q.question
+          }</strong></p>`;
+          q.explanation.forEach((paragraph) => {
+            explanationText += `<p>${paragraph}</p>`;
+          });
+        });
+        document.getElementById("explanation").innerHTML = explanationText;
+        document.getElementById("explanation").style.display = "block";
+      }
+
+      loadQuestion();
+    </script>
+  </body>
+</html>

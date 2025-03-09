@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HUKUM DAN PERHITUNGAN KIMIA</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logoo">Kimia-x-Infor<span class="icon">⚗️</span></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#" onclick="showPage('pengenalan')">Pengenalan</a></li>
+            <li><a href="#" onclick="showPage('kimia')">Hukum Kimia</a></li>
+            <li><a href="#" onclick="showPage('jenis')">Jenis</a></li>
+            <li>
+              <a href="#" onclick="showPage('perhitungan')"
+                >Perhitungan Kimia</a
+              >
+            </li>
+            <li><a href="#" onclick="showPage('latihan')">Latihan</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br />
+
+    <div class="wrapper">
+      <section id="pengenalan" class="page">
+      <img class="gambarawal" src="https://i.pinimg.com/736x/28/51/02/285102f77ceaf51f62b2a96e6a9792f8.jpg" width="430" height="630">
+      <div class="kolom">
+        <p class="deskripsi">Hukum dan Perhitungan Kimia</p>
+        <div class="separator"></div>
+        <br />
+        <br />
+        <p class="isi">
+          Saat ini, Indonesia memiliki cadangan bijih tembaga (konsentrat)
+          sebesar 3,1 miliar ton dengan tingkat produksi sebanyak 100 juta ton
+          per tahun. Konsentrat itu merupakan pasir olahan dari batuan
+          tambang, yang mengandung senyawa kimia berupa tembaga, emas, dan
+          perak. Setiap ton konsentrat mengandung 26,5% tembaga; 39,34 g emas;
+          dan 70,37 g perak.
+        </p>
+        <br />
+        <p class="isi">
+          Bagaimana menghitung kadar emas, tembaga, dan perak dalam senyawa
+          konsentrat tersebut sehingga dapat diprediksi besarnya produksi
+          emas, perak, dan tembaga? Untuk itulah Anda harus memahami hukum
+          dasar dan perhitungan kimia
+        </p>
+        <br>
+        <br>
+      <a href="https://www.quipper.com/id/blog/mapel/kimia/hukum-dasar-kimia/" class="poin">Mau tahu lebih?</a>
+      </section>
+
+      <section id="kimia" class="page" style="display: none">
+        <div class="kolom">
+          <p class="deskripsi">Hukum Dasar Kimia</p>
+          <div class="separator"></div>
+          <br>
+          <p class="isi">Afaan tuh hukum dasar kimia?  Hukum dasar kimia adalah prinsip-prinsip yang mendasari pemahaman kita tentang sifat dan perubahan materi dalam dunia kimia. Hukum-hukum ini menggambarkan hubungan yang konsisten antara zat-zat yang terlibat dalam reaksi kimia dan bagaimana mereka berinteraksi satu sama lain. Dengan hukum-hukum dasar ini, kita dapat memprediksi dan menjelaskan berbagai fenomena kimia yang terjadi di sekitar kita.</p>
+          <br>
+          <p class="isi">Pada dasarnya, hukum dasar kimia berfokus pada pemahaman bahwa dalam setiap perubahan kimia, baik itu reaksi atau perubahan fisik, terjadi keteraturan tertentu yang dapat dipahami dan dijelaskan melalui hukum-hukum ini. Prinsip-prinsip tersebut memungkinkan kita untuk menjelaskan bagaimana materi bertindak dalam kondisi tertentu dan bagaimana reaksi kimia berlangsung dengan cara yang dapat diprediksi dan diuji secara ilmiah.</p>
+          <br>
+        </div>
+      </section>
+
+      <section id="jenis" class="page" style="display: none">
+        <div class="kolom">
+          <p class="deskripsi">Jenis Hukum Dasar Kimia</p>
+          <div class="separator"></div>
+		  <br>
+      <br>
+          <p class="isi">
+            Terdapat beberapa jenis hukum hukum dasar dalam dunia kimia
+          </p>
+		  <br>
+      <br>
+          <p>
+			<ol>
+        <li class="subbab">Hukum Lavoisier (Hukum Kekekalan Massa)</li>
+			<br>
+			<img src="data:image/jpeg;base64,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" class="Gambar" 
+			width="250" height="250">
+			<p class="isi1">Hukum Kekekalan Massa awalnya dijelaskan oleh ilmuwan Rusia bernama
+				Mikhail Lomonosov (1748). Ia melakukan eksperimen selama 17 tahun untuk
+				membuktikan hukum kekekalan materi dengan menunjukkan bahwa pelat timah
+				yang dipanaskan dalam wadah tertutup tidak berubah massanya.</p>
+			<br>
+			<p class="isi1">Namun, pada akhirnya hukum Kekekalan Massa disempurnakan oleh Antoine
+				Lavoisier pada tahun 1765. Ia menganalisis massa zat sebelum dan sesudah
+				reaksi.Hasilnya, massa zat sebelum dan sesudah reaksi selalu sama. Jadi, saat
+				terjadi perubahan kimia, suatu zat bukan diciptakan atau dihancurkan
+				melainkan diubah.  Dari percobaannya, ia membuktikan kebenaran hukum kekekalan massa yang
+				berbunyi "Di dalam suatu sistem tertutup, massa zat-zat sebelum reaksi
+				sama dengan massa zat sesudah reaksi".</p>
+			<br>
+      <br>
+        <p class="subbab1">Contoh :</p>
+        <br>
+        <ol>
+            <li class="isi2"><p>Logam magnesum bermassa 4 gram dibakar dengan oksigen akan menghasilkan magnesium oksida. jika massa oksigen yang digunakan 6 gram, berapa gram massa magnesium oksida yang dihasilkan?</p>
+            <br>
+            </li>
+            <p class="subbab2">Pembahasan :</p>
+            <p class="isi2">massa zat-zat sebelum reaksi = massa zat-zat hasil reaksi</p>
+            <p class="isi2"> <i>m</i> magnesium oksida = <i>m</i> magnesium + <i>m</i> oksigen</p>
+            <p class="isi2"> = 4 gram + 6 gram = 10 gram</p>
+            <br>
+            <li class="isi2">Sejumlah logam besi dipijarkan dengan 3,2 gram belerang menghasilkan 8,8 gram senyawa besi(II) sulfida.  Berapa gram logam besi yang telah bereaksi</li>
+            <br>
+            <p class="subbab2">Pembahasan :</p>
+            <p class="isi2">Massa (besi + belerang) = <i>m</i> besi(II) sulfida</p>
+            <p class="isi2"><i>m</i> besi + 3,2 = 8,8</p>
+            <p class="isi2"><i>m</i> besi = 8,9 - 3,2</p>
+            <p class="isi2">= 5,7 gram</p>
+          </ol>   
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <li class="subbab"> Hukum Proust (Hukum Kelipatan Perbandingan)</li>
+        <br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd0wRssBU5CBFH0T9a5tapktO7Ob1W7f9ZDQ&s" class="Gambar" 
+			    width="250" height="300">
+        <p class="isi1"> Pada sekitar tahun 1799, <b>Joseph Luis Proust</b> menemukan bahwa "Perbandingan massa unsur-unsur dalam satu senyawa adalah tertentu dan tetap". Senyawa yang sama meskipun berasal dari sumber yang berbeda atau dibuat dengan cara yang berbeda ternyata mempunyai komposisi yang sama.</p>
+        <br>
+        <p class="isi1"><b>Contoh:</b><s/p>
+        <br>
+        <p class="isi1">Air tersusun dari unsur hidrogen dan unsur oksigen dengan perbandingan massa H: 0 = 1: 8, dari mana pun air tersebut berasal dan bagaimana cara air dibentuk. Air dalam keadaan sebagai es atau uap air mengandung unsur hidrogen dan oksigen dengan perbandingan H: O = 1:8. Apabila ada senyawa yang tersusun dari unsur hidrogen dan unsur oksigen dengan perbandingan yang berbeda, maka dapat dipastikan bukan air. Misalnya, hidrogen peroksida (zat pemutih rambut atau kain) juga terbentuk dari hidrogen dan oksigen, tetapi perbandingan antara hidrogen dan oksigen adalah 1: 16.</p>
+        <br>
+        <br>
+          <p class="subbab1">Contoh :</p>
+          <br>
+          <ol>
+            <li class="isi2"><p>Perbandingan massa unsur oksigen dan hidrogen di dalam air adalah 8: 1. Jika 100 gram unsur oksigen dan 3 gram unsur hidrogen bergabung membentuk senyawa (air), berapa gram air yang dapat dihasilkan?</p></li>
+            <br>
+            <p class="subbab2">Pembahasan :</p>
+            <p class="isi2">Perbandingan massa oksigen dan hidrogen dalam air sebagai berikut.</p>
+            <p class="isi2">      massa O : massa H = 8 : 1</p>
+            <p class="isi2"> Jika semua unsur O habis, diperlukan H = 1/8 × 100 gram </p>
+            <p class="isi2">= 12,5 gram</p>
+            <p class="isi2"></p>
+            <br>
+            <p class="isi2">Dalam reaksi kimia, tidak mungkin zat yang bereaksi melebihi yang disediakan. Oleh karena hanya tersedia 3 gram unsur hidrogen, tidak mungkin hidrogen yang bereaksi 12,5 gram. Berarti, zat yang habis membentuk senyawa adalah unsur hidrogen bermassa 3 gram.</p>
+            <p class="isi2">Jika hidrogen yang membentuk senyawa ada 3 gram, maka oksigen yang diperlukan sebagai berikut</p>
+            <p class="isi2">Massa oksigen = 8/1 × 3 gram</p>
+            <p class="isi2">= 24 gram</p>
+            <br>
+            <p class="isi2">Massa air yang dihasilkan = massa oksigen + massa hidrogen</p>
+            <p class="isi2">= 24 gram + 3 gram</p>
+            <p class="isi2">= 27 gram</p>
+            <br>
+            <p class="isi2">Oksigen yang tersisa = 100 - 24 gram</p>
+            <p class="isi2">= 76 gram</p>
+            <br>
+            <p class="isi2">Dalam reaksi kimia dimungkinkan adanya zat yang habis atau tersisa, tetapi tidak mungkin ada zat yang kurang.</p>
+            </ol>  
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        
+        <li class="subbab"> Hukum Dalton (Hukum Kelipatan Perbandingan)</li>
+        <br>
+            <img src="dalton1.jpg" class="Gambar" 
+          width="290" height="320">               
+            <br>
+        <p class="isi1">Dari dua unsur dapat dibentuk beberapa senyawa dengan perbandingan masssa yang dapat berbeda-beda.  Misalnya, belerang dengan oksigen dapat membentuk senyawa SO₂ dan SO₃, sedangkan unsur hidrogen dan oksigen dapat dibentuk senyawa H₂O dan H₂O₂.<s/p>
+        <br>
+        <br>
+        <p class="isi1">Dalton menyelidiki perbandingan dari unsur-unsur tersebut pada setiap senyawa dan didapatkan suatu pola keteraturan.  "<i>Apabila dua unsur dapat membentuk lebih dari satu senyawa, dan jika untuk massa salah satu unsur tersebut tetap (sama), maka perbandingan massa unsur yang lain dalam senyawa-senyawa tersebut merupakan bilangan bulat dan sederhana.</i>" Pernyataan tersebut selanjutnya disebut dengan Hukum Kelipatan Perbandingan atau Hukum Kelipatan Dalton.</p>
+        <br>
+        <p class="isi1"><b>Contoh:</b></p>
+        <p class="isi1">Nitrogen dan oksigen dapat membentuk senyawa-senyawa N₂O, NO, dan N₂O₄ dengan komposisi massa terlihat dalam tabel berikut.</p>
+        <br>
+        <table border="1" class="isi1">
+          <tr>
+              <td bgcolor="pink">Senyawa</td>
+              <td bgcolor="pink">Massa Nitrogen (gram)</td>
+              <td bgcolor="pink">Massa Oksigen (gram)</td>
+              <td bgcolor="pink">Perbandingan</td>
+          </tr>
+          <tr>
+              <td>N₂O</td>
+              <td>28</td>
+              <td>16</td>
+              <td>7 : 4</td>
+          </tr>
+          <tr>
+              <td>NO</td>
+              <td>14</td>
+              <td>16</td>
+              <td>7 : 8</td>
+          </tr>
+          <tr>
+              <td>N₂O₃</td>
+              <td>28</td>
+              <td>48</td>
+              <td>7 : 12</td>
+          </tr>
+          <tr>
+              <td>N₂O₃</td>
+              <td>28</td>
+              <td>64</td>
+              <td>7 : 16</td>
+          </tr>
+        </table>
+        <br>
+        <p class="isi1">Berdasarkan tabel tersebut, apabila massa N dibuat tetap (sama) sebanyak 7 gram, maka perbandingan massa oksigen di dalam N₂O : NO : N₂O₃ : N₂O₃ = 4 : 8 : 12 : 16 atau 1 : 2 : 3 : 4.</p>
+        <br>
+        <p class="subbab1">Contoh :</p>
+        <br>
+        <ol>
+            <li class="isi2"><p>Unsur X dan Y dapat membentuk dua senyawa yang masing-masing mengandung 50% dan 60% unsur X.  Tentukan perbandingan massa unsur Y dan X tetap.</p>
+            <br>
+            </li>
+            <p class="subbab2">Pembahasan :</p>
+            <p class="isi2">Pada senyawa pertama, massa unsur X 50%, maka massa unsur Y 50%, sedangkan pada senyawa yang kedua, jika X 60%, maka massa Y 40%</p>
+            <p class="isi2">Jadi,</p>
+            <p class="isi2">Senyawa I   -->   X : Y = 50% : 50% atau X : Y = 1 : 1</p>
+            <p class="isi2">Senyawa II   -->   X : Y = 60% : 40% atau X : Y = 3 : 2</p>
+            <p class="isi2">Untuk X tetap berarti harga X harus sama, maka</p>
+            <p class="isi2">Senyawa I   -->   X : Y = 3 : 3</p>
+            <p class="isi2">Senyawa II   -->   X : Y = 3 : 2</p>
+            <p class="isi2">Berart Y pada senyawa I : Y pada senyawa II = 3 : 2.</p>
+        </ol>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <li class="subbab"> Hukum Gay-Lussac (Hukum Perbandingan Volume)</li>
+        <br>
+            <img src="https://images.fineartamerica.com/images/artworkimages/medium/1/4-joseph-louis-gay-lussac-1778-1850-granger.jpg" class="Gambar" 
+          width="250" height="300">               
+            <br>
+        <p class="isi1">Hukum perbandingan volume ditemukan oleh Joseph Louis Gay Lussac pada tahun 1808. Ia mengamati suhu dan tekanan yang berjumlah sama, selain itu volume gas oksigen bereaksi dengan dua volume hidrogen yang menghasilkan dua volume uap air. Maka bunyi hukum Gay Lussac adalah:</p>
+        <p class="isi1"><i>"Pada suhu dan tekanan yang sama, volume gas-gas yang bereaksi dan volume
+          gas-gas hasil reaksi berbanding sebagai bilangan bulat dan sederhana."</i></p>
+        <br>
+        <p class="subbab1">Contoh :</p>
+        <br>
+        <ol>
+            <li class="isi2"><p>Pada suhu dan tekanan tertentu, setiap 1 liter gas nitrogen akan tepat habis bereaksi dengan 3 liter gas hidrogen membentuk 2 liter gas amonia.  Tentukan rumus molekul amonia.</p></li>
+            <br>
+            <p class="subbab2">Pembahasan :</p>
+            <p class="isi2">Oleh karena gas hidrogen dan nitrogen merupakan molekul diatomik, maka persamaan reaksinya  dapat dituliskan sebagai berikut</p>
+            <center><p class="isi2">N₂(<i>g</i>) + 3H₂(<i>g</i>) &#8594 2H<sub>x</sub>H<sub>y</sub></p></center>
+            <p class="isi2">Jumlah atom-atom seluruh dan sesudah reaksi harus sama, maka dapat dinyatakan sebagai berikut.</p>
+            <table border="1" class="isi2">
+              <tr>
+                  <td bgcolor="pink">Atom</td>
+                  <td bgcolor="pink">Sebelum reaksi</td>
+                  <td bgcolor="pink">Sesudah reaksi</td>
+                  <td bgcolor="pink">Persamaan</td>
+                  <td bgcolor="pink">Hasil</td>
+              </tr>
+              <tr>
+                  <td>N</td>
+                  <td>2</td>
+                  <td>2x</td>
+                  <td>2 = 2x</td>
+                  <td>x = 1</td>
+              </tr>
+              <tr>
+                  <td>H</td>
+                  <td>6</td>
+                  <td>2y</td>
+                  <td>6 = 2y</td>
+                  <td>y = 3</td>
+              </tr>
+            </table>
+            <br>
+            <p class="isi2">Jadi, rumus molekul amonia adalah NH<sub>3</sub>.</p>
+            <br>
+            <li class="isi2"><p>Jika gas metana dibakar sempurna dengan oksigen, reaksi yang terjadi dapat dinyatakan sebagai berikut.</p></li>
+            <br>
+            <center><p class="isi2">CH<sub>4</sub>(<i>g</i>) + O₂(<i>g</i>) &#8594 CO<sub>2</sub> (<i>g</i>) + H<sub>2</sub>O (<i>g</i>)</p></center>
+            <p class="isi2">Apabila metana yang dibakar 3 liter, berapa liter gas oksigen yang diperlukan dan berapa liter gas CO<sub>2</sub> dan H<sub>2</sub>O yang dihasilkan jika semua volume diukur pada suhu dan tekanan yang sama?</p>
+            <br>
+            <p class="subbab2">Pembahasan :</p>
+            <p class="isi2">Setarakan dulu reaksinya</p>
+            <p class="isi2">CH<sub>4</sub>(<i>g</i>) + 2O<sub>2</sub>(<i>g</i>) &#8594 CO<sub>2</sub>(<i>g</i>) + H<sub>2</sub>(<i>g</i>)</p>
+            <p class="isi2">Perbandingan volume</p>
+            <p class="isi0">CH<sub>4</sub> : O<sub>2</sub> : CO<sub>2</sub> : H<sub>2</sub>O = 1 : 2 : 1 : 2</p>
+            <p class="isi2">volume CH<sub>4</sub> = 3 liter,</p>
+            <br>
+            <p class="isi2">maka volume O<sub>2</sub> = 2/1 × 3 liter</p>
+            <p class="isi2">= 6 liter</p>
+            <p class="isi2">volume CO<sub>2</sub> = 1/1 × 3 liter</p>
+            <p class="isi2">= 3 liter</p>
+            <p class="isi2">volume H<sub>2</sub>O = 2/1 × 3 liter</p>
+            <p class="isi2">= 6 liter</p>
+        </ol>        
+      </ol>
+		  </p>
+        </div>
+      </section>
+
+      <section id="perhitungan" class="page" style="display: none">
+        <div class="kolom">
+          <p class="deskripsi">Perhitungan Kimia</p>
+          <div class="separator"></div>
+          <img class="gambarawal" src="https://i.pinimg.com/236x/3b/3f/35/3b3f35c0e36fa0dc643a5041094dbe66.jpg">
+          <br>
+          <p class="isi">Anda dapat menimbang sebutir telur seperti pada gambar disamping, tetapi dapatkah anda menimbang sebutir beras dengan neraca seperti gambar disamping, kemudian diminta mencari massa sebutir beras?</p>
+          <br>
+          <p class="isi">Yap, Jawaban anda benar, jika anda ingin menentukan massa sebutir beras dengan neraca, anda dapat menimbang 0,1 gram beras kemudian menghitung jumlah butir berasnya.  Hasilnya adalah massa rata-rata 1 butir beras.</p>
+          <br>          
+          <br>
+          <br>
+          <p class="deskripsi0">Massa Atom Relatif dan Massa Rumus Relatif</p>
+          <br>
+
+          <ol>
+            <li class="subbab">Massa Atom Rata-Rata</li>
+            <br>
+            <p class="isi1">Seperti halnya beras, atom merupakan partikel yang sangat kecil.  Sampai saat ini, tidak ada neraca yang dapat digunakan untuk menimbang satu butir atom.  Oleh karena itu, digunakan alat yang berbeda, yang disebut dengan spektrometer massa.</p>
+            <br>
+            <p class="isi1">Seperti telah dibahas dalam teori atom, bahwa atom-atom di alam dapat mempunyai massa yang berbeda. Oleh karena itu, massa atom dihitung berdasarkan massa rata-rata dari seluruh atom yang ada di alam. Dengan menggunakan spektrometer massa, diketahui bahwa atom hidrogen merupakan atom yang paling ringan dengan massa 1,67 x 10-27 kg. Oleh karena nilainya yang sangat kecil, maka dibuat cara untuk mempermudah perhitungan, di mana massa suatu partikel yang nilainya 1,66 x 10-27 kg disebut dengan 1 sma (satuan massa atom). Jadi, massa 1 atom hidrogen dianggap sama dengan 1 s.m.a.</p>
+            <br>
+            <p class="isi1">Masih ingat isotop, bukan? Atom karbon mempunyai isotop <span class="kiri"><sup class="spsb">12</sup><sub class="spsb">6</sub></span>C
+              <span class="kiri"><sup class="spsb">13</sup><sub class="spsb">6</sub></span>C dan <span class="kiri"><sup class="spsb">14</sup><sub class="spsb">6</sub></span>C, artinya massa atom karbon ada yang 12 sma dan 13 sma. Oleh karena ada beberapa isotop tersebut, maka massa atom merupakan massa rata-rata dari seluruh isotop yang ada di alam.
+            </p>
+            <br>
+            <p class="isi1"><b>Contoh:</b><s/p>
+            <br>
+            <p class="isi1">Atom klorin di alam terdapat dalam dua macam isotop, yaitu sebanyak 75% sebagai CI-35 yang massanya 35 sma, dan 25% sebagai CI-37 yang massanya 37 sma. Jadi, massa rata-rata atom klorin sebagai berikut.</p>
+            <br>
+            <p class="isi1">Massa rata-rata atom CI = ∑massa CI-35 + ∑massa CI-37  /  jumlah seluruh atom Cl di alam</p>
+            <p class="isi1"> (75% x 35) + (25% x 37)  /  100%</p>
+            <p class="isi1">= 35,5 sma</p>
+            <br>
+            <br>
+
+            <li class="subbab">Massa Atom Relatif (A<sub>r</sub>)</li>
+            <br>
+            <p class="isi1">Mengukur massa adalah membandingkan massa suatu benda terhadap benda yang lain, dengan massa benda pembanding disebut sebagai massa standar. Misalnya, kita menimbang gula dan dinyatakan massanya 1 kg, maka sebenarnya massa gula tersebut adalah sama (sebanding) dengan massa anak timbangan yang massanya 1 kg. Sebagai standar massa dalam penimbangan gula tersebut adalah massa anak timbangan.</p>
+            <br>
+            <p class="isi1">Hal yang sama juga berlaku dalam penentuan massa suatu atom, yaitu dalam menentukan massa atom. Sebagai standar massa atom adalah massa 1 atom karbon-12 (atom karbon yang massanya 12 sma). Jadi, massa atom yang diperoleh dari pengukuran adalah massa atom relatif terhadap atom karbon-12. Dari pengukuran diketahui bahwa massa atom hidrogen ternyata 0,08400 kali relatif terhadap massa atom C-12. Jika dihitung akan didapat bahwa massa atom hidrogen adalah 0,08400 x 12 sma atau 1,008 sma.</p>
+            <br>
+            <p class="isi1">Massa atom relatif diberi lambang A, yaitu perbandingan massa rata-rata 1 atom terhadap 1/12 massa 1 atom C-12.</p>
+            <br>
+            <center><p class="isi1">A<sub>r</sub>X = massa 1 atom <i>X</i>  /  1/12 × massa 1 atom  C-12</p></center>
+            <br>
+            <p class="isi1">dengan, A<sub>r</sub>X = massa atom relatif <i>X</i></p>
+            <p class="isi1">massa 1 atom C-12 = 12 sma</p>
+            <br>
+            <p class="subbab1">Contoh</p>
+            <br>
+
+            <ol>
+              <li class="isi2">Massa rata-rata atom N adalah 14 sma, berapa massa atom relatif N?</li>
+              <br>
+              <p class="subbab2">Pembahasan:</p>
+              <p class="isi2">A<sub>r</sub>N = massa rata-rata 1 atom N  /  1/12 × massa atom C-12</p>
+              <p class="isi2">= 14 sma  /  1/12 × 12 sma</p>
+              <p class="isi2">= 14</p>
+              <br>
+
+              <li class="isi2">Diketahui massa 1 atom C-12 adalah 2,04 × 10<sup>-27</sup> kg.  Berapa massa rata-rata 1 atom magnesium, jika A<sub>r</sub> Mg = 24?</li>
+              <br>
+              <p class="subbab2">Pembahasan:</p>
+              <p class="isi2">A<sub>r</sub>Mg = massa rata-rata 1 atom Mg  /  1/12 × massa 1 atom C-12</p>
+              <p class="isi2">24 = massa rata-rata 1 atom Mg  /  1/12 × 2,04 × 10<sup>-27</sup> kg</p>
+              <p class="isi2">Massa rata-rata 1 atom Mg = 1/12 × 24 × 2,04 × 10<sup>-27</sup> kg</p>
+              <p class="isi2">= 4,08 × 10<sup>-27</sup> kg</p>
+            </ol>
+            <br>
+
+            <li class="subbab">Massa Rumus Relatif (M<sub>r</sub>)</li>
+            <br>
+            <p class="isi1">Dalam satuan rumus kimia, baik merupakan molekul atau gabungan ion, massa rumus merupakan jumlah total dari massa atom relatif penyusun rumus kimia tersebut.</p>
+            <br>
+            <center><p class="isi1">M<sub>r</sub>A<sub>x</sub>B<sub>y</sub> = (<i>x</i> A<sub>r</sub>A + y A<sub>x</sub>B<sub>y</sub>)</p></center>
+            <p class="subbab1">Contoh</p>
+            <br>
+
+            <ol>
+              <li class="isi2">Hitunglah massa molekul relatif (M<sub>r</sub>) (NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub>, jika diketahui A<sub>r</sub> N = 14, H = 1, S = 16, O = 16.</li>
+              <br>
+              <p class="subbab2">Pembahasan:</p>
+              <p class="isi2">(M<sub>r</sub>) (NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub> = (2 × A<sub>r</sub> N) + (8 × A<sub>r</sub> H) + (1 × A<sub>r</sub> S) + (4 × A<sub>r</sub> O)</p>
+              <p class="isi2">= (2 × 14) + (8 × 1) + (1 × 32) + (4 × 16)</p>
+              <p class="isi2">= 28 + 8 + 32 + 64</p>
+              <p class="isi2">= 132</p>
+            </ol>
+            <br>
+            <br>
+            <br>
+            
+            <p class="deskripsi0">Konsep Mol</p>
+            <br>
+            <p class="isi">  Menurut Dalton,reaksi kimia adalah proses tata ulang susunan atom-atom dalam suatu molekuk, diawali dari terurainya atom atom dari suatu molekul kemudian bergabung kembali dengan susunan yang berbeda.  Misalnya gas oksigen dan hidrogen bereaksi membentuk air dengan persamaan reaksi sebagai berikut.</p>
+            <br>
+            <center><p class="isi">2H<sub>2</sub>(<i>g</i>) + O<sub>2</sub>(<i>g</i>) &#8594 2H<sub>2</sub>O(<i>g</i>)</p></center>
+            <br>
+            <p class="isi">Untuk menerapkan <i>prinsip ekonomi atom</i> atau manajemen atom secara baik, maka diperlukan jumlah atom yang tepat habis bereaksi sehingga tidak ada atom yang terbuang.  Bagaimana menentukan jumlah atom, ion, dan molekul?</p>
+            <br>
+
+            <ol>
+              <li class="subbab">Bilangan Avogadro</li>
+              <br>
+              <p class="isi1">Mol (<i>diberi lambang: n</i>) menurut satuan SI terbaru (redefinisi 2019) merupakan satuan jumlah partikel dimana <i>satu mol mengandung persis 6,022 140 76 × 10<sup>23</sup> partikel dasar (atom, molekul, ion, elektron).</i>  Angka 6,022 140 76 × 10<sup>23</sup> disebut dengan bilangan Avogadro dan diberi lambang L.</p>
+              <br>
+              <center><p class="isi1">2H<sub>2</sub>(<i>g</i>) + O<sub>2</sub>(<i>g</i>) &#8594 2H<sub>2</sub>O(<i>g</i>)</p></center>
+              <p class="subbab1">Contoh</p>
+                <ol>
+                  <li class="isi2">Berapa atom oksigen dan hidrogen yang terdapat dalam 0,5 mol molekul H<sub>2</sub>O?</li>
+                  <br>
+                  <p class="subbab2">Pembahasan:</p>
+                  <p class="isi2">Jumlah molekul yang terdapat dalam 0,5 mol molekul H<sub>2</sub>O sebagai berikut.</p>
+                  <p class="isi2">= 0,5 × 6,022 × 10<sup>23</sup> molekul</p>
+                  <p class="isi2">= 3,011 × 10<sup>23</sup> molekul</p>
+                  <br>
+                  <p class="isi2">Setiap 1 molekul H<sub>2</sub>O terbentuk dari 2 atom H dan 1 atom O.  Jadi, dalam 3,011 × 10<sup>23</sup> molekul H<sup>2</sup>O terdapat:</p>
+                  <p class="isi2">H = 2 × 3,011 × 10<sup>23</sup></p>
+                  <p class="isi2">= 6,022 × 10<sup>23</sup> atom</p>
+                  <br>
+                  <p class="isi2">O = 1 × 3,011 × 10<sup>23</sup></p>
+                  <p class="isi2">= 3,011 × 10<sup>23</sup> atom</p>
+                </ol>
+                <br>
+
+              <li class="subbab"> Massa Molar (<i>m</i><sub>m</sub>)</li>
+              <br>
+              <p class="isi1">Dalam praktiknya, tidak mungkin mereaksikan sejumlah molekul zat dengan sejumlah molekul zat lain dengan menghitung molekul.  Oleh sebab itu, digunakan cara yang lebih praktis dengan menimbang massa zat zat yang akan direaksikan</p>
+              <p class="isi1">Hubungan massa dengan jumlah partikel dinyatakan dalam massa molar, yaitu massa zat yang mengandung 6,02 × 10<sup>23</sup> partikel zat itu.  Sebagai standar, massa molar ditetapkan 12 gram atom C-12 dan apabila dikonversikan ke dalam satuan massa, maka massa 1 mol suatu zat sama dengan massa zat itu yang sesuai dengan massa atom relatif atau massa rumus relatifnya.</p>
+              <br>
+              <center><p class="isi1">2H<sub>2</sub>(<i>g</i>) + O<sub>2</sub>(<i>g</i>) &#8594 2H<sub>2</sub>O(<i>g</i>)</p></center>
+              <p class="subbab1">Contoh</p>
+                <ol>
+                  <li class="isi2">Seorang laboran di laboratorium ingin membuat 1 liter larutan gula (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>), yang didalamnya harus mengandung 3,01 × 10<sup>23</sup> molekul gula.  Berapa gram gula yang harus dilarutkan oleh laboran tersebut? A<sub><i>r</i></sub> C = 12, O = 16, dan H = 1.</li>
+                  <br>
+                  <p class="subbab2">Pembahasan:</p>
+                  <p class="isi2">M<sub><i>r</i></sub> gula = (12 × 2) + (22 × 1) + (11 × 16)</p>
+                  <p class="isi2">= 342</p>
+                  <br>
+                  <p class="isi2">Jumlah molekul gula = 3,01 × 10<sup>23</sup></p>
+                  <p class="isi2">n = 3,01 × 10<sup>23</sup> / 6,02 × 10 <sup>23</sup></p>
+                  <p class="isi2">n = 0,5 mol</p>
+                  <br>
+                  <p class="isi2">Massa gula = n × m<sub><i>m</i></sub></p>
+                  <p class="isi2">= 0,5 mol × 342 gram/mol</p>
+                  <p class="isi2">= 171 gram</p>
+                  <br>
+
+                  <li class="isi2">Berapa gram massa urea (CO(NH<sub>2</sub>)<sub>2</sub>) yang mengandung 0,15 mol urea? (diketahui: A<sub><i>r</i></sub> C = 12; O = 16; N = 14; H = 1)</li>
+                  <br>
+                  <p class="subbab2">Pembahasan:</p>
+                  <p class="isi2">M<sub><i>r</i></sub> urea = (1 × 12) + (1 × 16) + (2 × 14) + (4 × 1)</p>
+                  <p class="isi2">m<sub><i>m</i></sub> urea = 60 gram/mol</p>
+                  <p class="isi2">Massa urea = <i>n</i> × m<sub><i>m</i></sub></p>
+                  <p class="isi2">= 0,15 mol × 60 gram/mol</p>
+                  <p class="isi2">= 9 gram</p>
+                  <br>
+
+                  <li class="isi2">Berapa jumlah molekul O<sub>2</sub> yang terdapat dalam 8 gram gas oksigen (A<sub>r</sub> O = 16)?</li>
+                  <br>
+                  <p class="subbab2">Pembahasan:</p>
+                  <p class="isi2">M<sub><i>r</i></sub> O<sub>2</sub> = 2 × 16</p>
+                  <p class="isi2">= 32</p>
+                  <p class="isi2">m<sub><i>m</i></sub> O<sub>2</sub> = 32 gram/mol</p>
+                  <p class="isi2">n = 8 gram / 32 gram/mol = 0,25 mol</p>
+                  <p class="isi2">Jumlah partikel = n × L</p>
+                  <p class="isi2">Jumlah partikel = 0,25 mol × 6,02 × 10<sup>23</sup> molekul/mol</p>
+                  <p class="isi2">= 1,505 × 10<sup>23</sup> molekul</p>
+                </ol>
+                <br>
+
+                <li class="subbab">Volume Molar</li>
+                <br>
+                <p class="isi1"><i>Volume molar gas adalah volume 1 mol gas pada suhu dan tekanan tertentu.</i>  Jika pengukuran dilakukan pada keadaan standar atau STP <i>(Standar Temperature and Pressure)</i>, yaitu pada suhu 0&deg;C dan tekanan 1 atm, volume molar gas disebut sebagai <i><b>volume molar standar</b></i>.  Penentuan volume molar gas pada keadaan standar dilakukan dengan menimbang sejumlah volume gas tertentu dalam tabung yang sudah diketahui massanya pada suhu 0&deg;C dan tekanan gas 1 atm.</p>
+                <br>
+                <p class="isi1"><b>Contoh:</b></p>
+                <p class="isi1">Untuk menentukan volume molar gas hidrogen, maka ditimbang 1 liter gas hidrogen pada 0&deg;C dan tekanan 1 atm.  Ternyata, massanya 0,0892 gram.</p>
+                <p class="isi1">Volume molar gas hidrogen tersebut adalah:</p>
+                <p class="isi1">Jumlah mol gas H<sub>2</sub> = 0,0892 g / 2 g/mol</p>
+                <p class="isi1">= 0,0446 mol</p>
+                <p class="isi1">Volume 0,0446 mol gas H<sub>2</sub> adalah 1 liter.  Jadi, untuk 1 mol gas H<sub>2</sub>, volumenya</p>
+                <p class="isi1">= 1 liter / 0,0446 mol</p>
+                <p class="isi1">= 22,4215 liter/mol</p>
+                <br>
+
+                <p class="subbab1">Contoh</p>
+                <ol>
+                  <li class="isi2">Hitunglah volume 4 gram gas SO<sub>3</sub> pada 0&deg;C, 1 atm, jika diketahui A<sub><i>r</i></sub> S = 32 dan O = 16.</li>
+                  <br>
+                  <p class="subbab2">Pembahasan:</p>
+                  <p class="isi2">M<sub><i>r</i></sub> SO<sub>3</sub> = 80</p>
+                  <p class="isi2">Massa molar SO<sub>3</sub> = 80 gram/mol</p>
+                  <br>
+                  <p class="isi2">n = 4 g / 80 g/mol</p>
+                  <p class="isi2">= 0,05 mol</p>
+                  <br>
+                  <p class="isi2">V = 0,05 mol × 22,4 liter/mol</p>
+                  <p class="isi2">= 1,12 liter</p>
+                  <br>
+
+                  <li class="isi2">Berapakah massa 10 liter CH<sub>4</sub> (M<sub>r</sub> = 16), jika diukur pada 0&deg;C dan tekanan 1 atm?</li>
+                  <br>
+                  <p class="subbab2">Pembahasan:</p>
+                  <p class="isi2">Jumlah mol CH<sub>4</sub> = 10 liter / 22,4 liter/mol</p>
+                  <p class="isi2">= 0,446 mol</p>
+                  <br>
+                  <p class="isi2">Massa gas CH<sub>4</sub> = 0,446 mol × 16 gram/mol</p>
+                  <p class="isi2">= 7,136 gram</p>
+                </ol>
+
+            </ol>
+            <br>
+          </ol>
+        </div>
+      </section>
+
+      <section id="latihan" class="page" style="display: none">
+        <div class="kolom">
+          <p class="deskripsi">Latihan</p>
+          <div class="separator"></div>
+		      <br>
+          <p class="isi">Udah ngerti sm materinya? eits kadang perasaan tu suka sesad. perasaan aja ga cukup buat mahamin materi.  buat mastiin man teman bisa gege banget nguasain materinya, klik kuiz dibawah ini biar makin tau makin ngerti, makin paham, dan makin pusing!</p>
+          <br>
+          <a href="D:\Web N aja - Copy\New folder\Quizz.html" class="poin">Klik disini</a>
+          <br>
+        </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Website Kimia | Naja XII A | Dibuat untuk edukasi 💪</p>
+    </footer>
+
+    <script>
+      function showPage(pageId) {
+        var pages = document.querySelectorAll(".page");
+        pages.forEach(function (page) {
+          page.style.display = "none";
+        });
+        document.getElementById(pageId).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
